@@ -1,2 +1,1 @@
-# HarasKhan
-
+Um projeto teste para um Haras de Minas Gerais, na intenção de melhorar a qualidade do site da empresa.
