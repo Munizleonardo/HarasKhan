@@ -1,0 +1,292 @@
+/* Estilos Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Sugestão de fonte, pode alterar */
+}
+
+body {
+    background-color: #f4f4f4; /* Um cinza claro para o fundo geral */
+}
+
+/* 1. TOPO (HEADER) */
+header {
+    background-color: white;
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; /* Mantém o topo fixo ao rolar */
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-right: 50px; /* Espaço entre a logo e os botões */
+}
+
+.logo img {
+    height: 60px; /* Ajuste a altura da logo conforme necessário */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Espaçamento entre os botões */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Efeito de sublinhado ao passar o mouse */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8B4513; /* Cor de sela, combina com o tema */
+    transition: width 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Estilização do submenu (Garanhões, Montados, etc.) - escondido por padrão */
+.nav-links ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links li:hover > ul {
+    display: block; /* Mostra o submenu ao passar o mouse no item "CAVALOS" */
+}
+
+.nav-links ul li {
+    margin-bottom: 10px;
+}
+
+.nav-links ul li a {
+    color: #333;
+    font-size: 1rem; /* Aumenta o tamanho da fonte do submenu */
+}
+
+/* 2. BANNER */
+.banner-section {
+    height: 80vh; /* Ocupa 80% da altura da tela */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    /* Aplica a imagem como fundo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o elemento perfeitamente */
+    font-size: 7rem; /* Tamanho grande para o título */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* 3. SOBRE NÓS */
+.sobre {
+    background-color: white;
+    padding: 80px 10%;
+    /* Organiza os itens em uma coluna */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha a coluna à direita */
+    max-width: 100%; /* Limita a largura do texto a 100% da seção */
+}
+
+.sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sobre p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 20px;;
+}
+
+.btn-saiba-mais {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #a0522d;
+}
+
+/* 4. ANIMAIS EM DESTAQUE (CARROSSEL) */
+.animais-destaque {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.animais-destaque h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Container que esconde os animais que não estão visíveis */
+.animais-container-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Container flex que alinha os animais lado a lado */
+.animais-container {
+    display: flex;
+    /* A transição será controlada pelo JavaScript */
+    transition: transform 0.5s ease-in-out;
+}
+
+.animal {
+    /* Cada animal ocupa 50% do container, mostrando 2 por vez */
+    flex: 0 0 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.animal img {
+    width: 100%;
+    height: 400px; /* Altura fixa para as imagens */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.animal h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* 5. CONTATO E INFORMAÇÕES */
+.contato-geral {
+    display: flex;
+    padding: 80px 10%;
+    background-color: white;
+    gap: 50px;
+}
+
+.contato {
+    flex: 1; /* Ocupa o espaço disponível (lado esquerdo) */
+}
+
+.info-adicional {
+    flex: 1; /* Ocupa o espaço disponível (lado direito) */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contato h2, .info-adicional h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #a0522d;
+}
+
+.info-adicional p {
+    font-size: 1.1rem; /* Aumenta o tamanho da fonte das informações */
+    line-height: 1.6;
+}
+
+.informacoes-haras .mapa {
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%; /* Garante que o mapa ocupe toda a largura da coluna */
+}
+
+.icones-redes a {
+    margin-right: 15px;
+}
+
+.icones-redes img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.icones-redes img:hover {
+    transform: scale(1.1);
+}
+
+/* 6. RODAPÉ */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
