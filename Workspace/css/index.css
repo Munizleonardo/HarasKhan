@@ -100,7 +100,7 @@ header nav {
     color: white;
     
     /* Aplica a imagem como fundo */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/banner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Imagens/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
