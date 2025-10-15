@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+    <html lang="pt-br">
+
+        <head>
+            <!--Metas da Página-->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="author" content="Haras Khan">
+
+            <!--Título da Página-->
+            <title>Sobre - Haras Khan</title>
+
+            <!--Link do CSS-->
+            <link rel="stylesheet" href="../CSS/sobre.css">
+
+            <!--Ícone da Página-->
+            <link rel="shortcut icon" href="../Imagens/Ícones/logo.jpeg" type="image/x-icon">
+        </head>
+
+        <body>
+            <header>
+                <!--Topo-->
+                <nav>
+                    <!--Imagem Logo-->
+                    <div class="logo">
+                        <a href="./index.html"><img src="../Imagens/Ícones/logo.jpeg" alt="Logo do Haras Khan"></a>
+                    </div>
+
+                    <!--Botões topo da página-->
+                    <ul class="nav-links">
+                        <li><a href="./sobre.html">HARAS KHAN</a></li>
+                        <li><a href="./raca.html">NOSSA RAÇA</a></li>
+                        <li><a href="./cavalos.html">CAVALOS</a>
+                            <ul>
+                                <li><a href="">Garanhões</a></li>
+                                <li><a href="">Montados</a></li>
+                                <li><a href="">Doadores</a></li>                                
+                            </ul>
+                        </li>
+                        <li><a href="./contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="banner-section">
+                <!--Imagem banner início página no CSS-->
+                <!--Título do Banner no início da Página-->
+                <h1>HARAS KHAN</h1>
+            </section>
+
+            <section>
+                <!--Sobre nós-->
+                <div class="sobre">
+                    <h2>SOBRE NÓS</h2>
+                    <div class="sobre-container">
+                        <div class="sobre-imagem">
+                            <!-- Substitua pelos caminhos corretos das suas imagens -->
+                            <img src="../Imagens/Equipe/equipe1.jpg" alt="Equipe do Haras Khan 1" class="team-slide active">
+                            <img src="../Imagens/Equipe/equipe2.jpg" alt="Equipe do Haras Khan 2" class="team-slide">
+                            <img src="../Imagens/Equipe/equipe3.jpg" alt="Equipe do Haras Khan 3" class="team-slide">
+                        </div>
+                        <div class="sobre-texto">
+                            <p>O Haras Khan foi construído com a missão de criação e treinamento de cavalos de alta qualidade. Visando criar seus próprios cavalos, o haras investe em genética de ponta e manejo especializado. Alta qualidade de treinamento é garantida por meio de métodos inovadores e uma equipe dedicada.</p>
+                            <p>A cada ano a produção aumenta, e com isso, a qualidade dos nossos animais também se eleva. Estamos comprometidos em oferecer o melhor para nossos clientes e para os cavalos que criamos.</p>
+                            <p>Com a produção iniciada em 2020, já temos diversos campeões em nosso haras, contando com garanhões, éguas campeãs e reservadas campeãs, potros e potras de qualidade.</p>
+                            <p><strong>Estrutura:</strong> Contamos com instalações modernas e adequadas para o manejo e treinamento dos nossos cavalos, garantindo o máximo conforto e bem-estar.</p>
+                            <p><strong>História:</strong> O Haras Khan foi fundado em 2020 e desde então tem se dedicado à criação de cavalos de alta qualidade, sempre buscando inovação e excelência em seus métodos.</p>
+                            <p><strong>Equipe:</strong> Nossa equipe é composta por profissionais experientes e apaixonados pela criação de cavalos, garantindo o melhor cuidado e treinamento para nossos animais.</p>
+                            <p><strong>Cavalos:</strong> Nossos cavalos são selecionados com rigor, priorizando a genética e o temperamento, resultando em animais de alto padrão.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contato-geral">
+                <!--Contato-->
+                <div class="contato">
+                    <h2>FALE CONOSCO</h2>
+                    <!--Formulário de preenchimento-->
+                    <form action="enviar-email.php" method="post">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto:</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+                        </div>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="info-adicional">
+                    <div class="informacoes-haras">
+                        <h3>INFORMAÇÕES</h3>
+                        <p>O Haras Khan está localizado em uma área privilegiada, rodeado pela natureza e com instalações de primeira linha para o cuidado dos nossos animais.</p>
+                        <!-- Mapa Incorporado do Google Maps -->
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.442594183878!2d-44.4313883857313!3d-20.1488919864059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa0b1a8a3e6b2af%3A0x4b3532c80783184a!2sMinas%20Gerais!5e0!3m2!1spt-BR!2sbr!4v1672700000000!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="redes-sociais">
+                        <h3>REDES SOCIAIS</h3>
+                        <p>Siga-nos para ficar por dentro das novidades.</p>
+                        <div class="icones-redes">
+                            <a href="https://www.facebook.com/haraskhan.mm/?locale=pt_BR" target="_blank"><img src="../Imagens/Ícones/facebook.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/haraskhan.mm/?hl=pt" target="_blank"><img src="../Imagens/Ícones/instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Rodapé-->
+            <footer>
+                <p>&copy; 2025 Haras Khan. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a class="link-insta" href="https://www.instagram.com/munizleonardo/?hl=af" target="_blank">Leonardo Muniz</a></p>
+            </footer>
+
+            <!--Javascript da Página-->
+            <script src="../Javascript/sobre.js"></script>
+        </body>
+        
+    </html>
