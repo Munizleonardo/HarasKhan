@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+    <html lang="pt-br">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="author" content="Haras Khan">
+
+            <!--Título da Página-->
+            <title>Mangalarga Marchador</title>
+
+            <!--Link do CSS-->
+            <link rel="stylesheet" href="../CSS/raca.css">
+
+            <!--Ícone da Página-->
+            <link rel="shortcut icon" href="../Imagens/Ícones/logo.jpeg" type="image/x-icon">
+        </head>
+
+        <body>
+            <!--Topo-->
+            <header>
+                <nav>
+                    <!--Imagem Logo-->
+                    <div class="logo">
+                        <a href="./index.html"><img src="../Imagens/Ícones/logo.jpeg" alt="Logo do Haras Khan"></a>
+                    </div>
+
+                    <!--Botões topo da página-->
+                    <ul class="nav-links">
+                        <li><a href="./sobre.html" target="_blank">HARAS KHAN</a></li>
+                        <li><a href="./raca.html" target="_blank">NOSSA RAÇA</a></li>
+                        <li><a href="./cavalos.html" target="_blank">CAVALOS</a>
+                            <ul>
+                                <li><a href="">Garanhões</a></li>
+                                <li><a href="">Montados</a></li>
+                                <li><a href="">Doadores</a></li>                                
+                            </ul>
+                        </li>
+                        <li><a href="./contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="banner-section">
+                <!--Imagem banner início página no CSS-->
+                <!--Título do Banner no início da Página-->
+                <h1>HARAS KHAN</h1>
+            </section>
+
+            <section>
+                <!--Sobre nós-->
+                <div class="sobre">
+                    <h2>Mangalarga Marchador</h2>
+                    <p>A raça Mangalarga Marchador é tipicamente brasileira e surgiu há cerca de 200 anos na Comarca do Rio das Mortes, no Sul de Minas, através do cruzamento de cavalos da raça Alter – trazidos da Coudelaria de Alter do Chão, em Portugal – com outros cavalos selecionados pelos criadores daquela região mineira.<br><br>
+
+                    A base de formação dos cavalos Alter é a raça espanhola Andaluza, cuja origem étnica vem de cavalos nativos da Península Ibérica, germânicos e berberes. Os cruzamentos dessas raças deram origem a animais de porte elegante, beleza plástica, temperamento dócil e próprios para a montaria.<br><br>
+
+                    Os primeiros exemplares da raça Alter chegaram ao Brasil em 1808, com D. João VI, que se transferiu para a Colônia com a família real. Os cavalos dessa raça eram muito valorizados em Portugal e a família real investia em coudelarias (haras) para o aprimoramento da raça. A Coudelaria de Alter foi criada em 1748 por D. João V e viveu momentos de glória durante o século XVIII, formando animais bastante procurados por príncipes e nobres europeus para as atividades de lazer e serviço.<br><br>
+
+                    Minas Gerais já se destacava como centro criador de equinos desde o século XVIII e a chegada dos cavalos da raça Alter veio aprimorar ainda mais seus criatórios. A Comarca do Rio das Mortes tinha um potencial de ouro muito baixo, mas chamou a atenção dos colonizadores por causa das suas boas condições para a criação dos animais. Havia água em abundância e a vegetação era constituída de matas, capões e ervas pardacentas, adequadas para a produção de forragem.<br><br>
+
+                    O Mangalarga Marchador teve como berço a fazenda Campo Alegre, no Sul de Minas. Ela pertencia a Gabriel Francisco Junqueira, o Barão de Alfenas, a quem é atribuída a responsabilidade pela formação da raça. A fazenda era uma herança de seu pai, João Francisco Junqueira. Outro fazendeiro importante na história do Mangalarga Marchador foi José Frausino Junqueira, sobrinho de Gabriel Junqueira. Exímio caçador de veados, José Frausino aprendeu a valorizar os cavalos marchadores por serem resistentes e ágeis para transportá-lo em suas longas jornadas.<br><br>
+
+                    Há várias versões para o nome Mangalarga Marchador, mas a mais consistente está relacionada à fazenda Mangalarga, localizada em Paty do Alferes, no Rio de Janeiro. O nome da fazenda era o mesmo de uma serra que existia na região. Seu proprietário era um rico fazendeiro que, impressionado com os cavalos da família Junqueira, adquiriu alguns exemplares para os passeios elegantes realizados no Rio de Janeiro. Quando alguém se interessava pelos animais, ele indicava as fazendas do Sul de Minas. As pessoas procuravam os fazendeiros perguntando pelos cavalos da fazenda Mangalarga e esta referência se transformou em nome. Já o nome Marchador foi acrescentado pelo fato de alguns daqueles cavalos terem a função de marchar em vez de trotar.</p>
+                    <a href="https://www.abccmm.org.br/principal" class="btn-saiba-mais" target="_blank">SITE OFICIAL</a>
+                </div>
+            </section>
+
+            <section class="contato-geral">
+                <!--Contato-->
+                <div class="contato">
+                    <h2>FALE CONOSCO</h2>
+                    <!--Formulário de preenchimento-->
+                    <form action="enviar-email.php" method="post">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto:</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+                        </div>
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="info-adicional">
+                    <div class="informacoes-haras">
+                        <h3>INFORMAÇÕES</h3>
+                        <p>O Haras Khan está localizado em uma área privilegiada, rodeado pela natureza e com instalações de primeira linha para o cuidado dos nossos animais.</p>
+                        <!-- Mapa Incorporado do Google Maps -->
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.442594183878!2d-44.4313883857313!3d-20.1488919864059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa0b1a8a3e6b2af%3A0x4b3532c80783184a!2sMinas%20Gerais!5e0!3m2!1spt-BR!2sbr!4v1672700000000!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="redes-sociais">
+                        <h3>REDES SOCIAIS</h3>
+                        <p>Siga-nos para ficar por dentro das novidades.</p>
+                        <div class="icones-redes">
+                            <a href="https://www.facebook.com/haraskhan.mm/?locale=pt_BR" target="_blank"><img src="../Imagens/Ícones/facebook.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/haraskhan.mm/?hl=pt" target="_blank"><img src="../Imagens/Ícones/instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--Rodapé-->
+            <footer>
+                <p>&copy; 2025 Haras Khan. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a class="link-insta" href="https://www.instagram.com/munizleonardo/?hl=af" target="_blank">Leonardo Muniz</a></p>
+            </footer>
+
+        </body>
+
+    </html>
