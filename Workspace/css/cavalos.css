@@ -1,0 +1,385 @@
+/* Estilos Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* 1. TOPO*/
+header {
+    background-color: white;
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-right: 50px; 
+}
+
+.logo img {
+    height: 60px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8B4513; 
+    transition: width 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+.nav-links ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links li:hover > ul {
+    display: block; 
+}
+
+.nav-links ul li {
+    margin-bottom: 10px;
+}
+
+.nav-links ul li a {
+    color: #333;
+    font-size: 1rem; 
+}
+
+/* 2. BANNER */
+.banner-section {
+    height: 80vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Imagens//Background/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 7rem; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* 3. SEÇÃO CAVALOS */
+.cavalos-section {
+    padding: 60px 5%;
+    background-color: #e7e7e7;
+}
+
+/* Filtros */
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filtro-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8B4513;
+    background-color: transparent;
+    border: 2px solid #8B4513;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro-btn:hover, .filtro-btn.active {
+    background-color: #8B4513;
+    color: white;
+}
+
+/* Lista de Animais */
+.animais-lista-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.animal-lista-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.animal-lista-item:hover {
+    background-color: #f0f0f0;
+}
+
+.animal-lista-item.selected {
+    background-color: #a0522d;
+    color: white;
+}
+
+/* Detalhe do Animal */
+.animal-detalhe-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.animal-detalhe {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.animal-imagem {
+    flex: 1;
+    max-width: 50%;
+}
+
+.animal-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.animal-info-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.animal-info h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.animal-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Genealogia */
+.animal-genealogia h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.arvore ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.arvore .pais {
+    display: flex;
+    gap: 30px;
+}
+
+.arvore .pai, .arvore .mae {
+    flex: 1;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.arvore span {
+    font-weight: bold;
+    color: #8B4513;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.arvore p {
+    margin: 0 0 10px 0;
+}
+
+.arvore .avos {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+}
+
+/* 5. CONTATO E INFORMAÇÕES */
+.contato-geral {
+    display: flex;
+    padding: 80px 10%;
+    background-color: white;
+    gap: 50px;
+}
+
+.contato {
+    flex: 1; 
+}
+
+.info-adicional {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contato h2, .info-adicional h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #a0522d;
+}
+
+.info-adicional p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+.informacoes-haras .mapa {
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.icones-redes a {
+    margin-right: 15px;
+}
+
+.icones-redes img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.icones-redes img:hover {
+    transform: scale(1.1);
+}
+
+/* 6. RODAPÉ */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.link-insta {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-insta:hover {
+    color: black;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .animal-detalhe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .animal-imagem {
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .arvore .pais {
+        flex-direction: column;
+    }
+}

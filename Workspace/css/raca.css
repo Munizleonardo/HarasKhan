@@ -251,3 +251,20 @@ footer p {
 .link-insta:hover {
     color: black;
 }
+
+/* 7. RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+    .banner-section h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .sobre {
+        padding: 40px 5%;
+    }
+
+    .contato-geral {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+}
