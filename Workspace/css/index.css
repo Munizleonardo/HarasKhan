@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* 1. TOPO (HEADER) */
+/* 1. TOPO*/
 header {
     background-color: white;
     padding: 10px 5%;
@@ -292,4 +292,25 @@ footer p {
 
 .link-insta:hover {
     color: black;
+}
+
+/* 7. RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+    .banner-section h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .sobre {
+        padding: 40px 5%;
+    }
+
+    .animal {
+        flex: 0 0 100%; 
+    }
+
+    .contato-geral {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
 }
