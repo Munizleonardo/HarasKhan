@@ -1,0 +1,302 @@
+/* Estilos Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* 1. TOPO*/
+header {
+    background-color: white;
+    padding: 10px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-right: 50px; 
+}
+
+.logo img {
+    height: 60px; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8B4513; 
+    transition: width 0.3s;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+.nav-links ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-links li:hover > ul {
+    display: block; 
+}
+
+.nav-links ul li {
+    margin-bottom: 10px;
+}
+
+.nav-links ul li a {
+    color: #333;
+    font-size: 1rem; 
+}
+
+/* 2. BANNER */
+.banner-section {
+    height: 80vh; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Imagens//Background/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 7rem; 
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* 3. INTRODUÇÃO CONTATO */
+.introducao-contato {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #e7e7e7;
+}
+
+.introducao-contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.introducao-contato p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    color: #555;
+}
+
+.botoes-contato {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-contato {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-contato:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn-contato img {
+    height: 24px;
+}
+
+.btn-contato.instagram { background-color: #E1306C; }
+.btn-contato.whatsapp { background-color: #25D366; }
+.btn-contato.email { background-color: #8B4513; }
+
+/* 5. CONTATO E INFORMAÇÕES */
+.contato-geral {
+    display: flex;
+    padding: 80px 10%;
+    background-color: white;
+    gap: 50px;
+}
+
+.contato {
+    flex: 1; 
+}
+
+.info-adicional {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contato h2, .info-adicional h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #a0522d;
+}
+
+.info-adicional p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+.informacoes-haras .mapa {
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.icones-redes a {
+    margin-right: 15px;
+}
+
+.icones-redes img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.icones-redes img:hover {
+    transform: scale(1.1);
+}
+
+/* 6. RODAPÉ */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.link-insta {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-insta:hover {
+    color: black;
+}
+
+/* 7. RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+    .banner-section h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .sobre {
+        padding: 40px 5%;
+    }
+
+    .animal {
+        flex: 0 0 100%; 
+    }
+
+    .contato-geral {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    .introducao-contato {
+        padding: 40px 5%;
+    }
+
+    .introducao-contato h2 {
+        font-size: 2rem;
+    }
+}
