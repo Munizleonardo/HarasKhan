@@ -1,4 +1,4 @@
-/* Estilos Gerais e Reset */
+/*ESTILOS GERAIS*/
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* 1. TOPO*/
+/*TOPO*/
 header {
     background-color: white;
     padding: 10px 5%;
@@ -65,6 +65,9 @@ header nav {
     width: 100%;
 }
 
+.nav-links li a.active::after {
+    width: 100%;
+}
 
 .nav-links ul {
     display: none;
@@ -89,7 +92,7 @@ header nav {
     font-size: 1rem; 
 }
 
-/* 2. BANNER */
+/*BANNER*/
 .banner-section {
     height: 80vh; 
     position: relative;
@@ -113,13 +116,12 @@ header nav {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-/* 3. SEÇÃO CAVALOS */
+/*SEÇÃO CAVALOS*/
 .cavalos-section {
     padding: 60px 5%;
     background-color: #e7e7e7;
 }
 
-/* Filtros */
 .filtros-container {
     display: flex;
     justify-content: center;
@@ -145,7 +147,6 @@ header nav {
     color: white;
 }
 
-/* Lista de Animais */
 .animais-lista-container {
     display: flex;
     justify-content: center;
@@ -175,7 +176,6 @@ header nav {
     color: white;
 }
 
-/* Detalhe do Animal */
 .animal-detalhe-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -218,7 +218,6 @@ header nav {
     line-height: 1.6;
 }
 
-/* Genealogia */
 .animal-genealogia h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
@@ -262,7 +261,7 @@ header nav {
     border-top: 1px dashed #ccc;
 }
 
-/* 5. CONTATO E INFORMAÇÕES */
+/*CONTATO E INFORMAÇÕES*/
 .contato-geral {
     display: flex;
     padding: 80px 10%;
@@ -343,7 +342,7 @@ form button:hover {
     transform: scale(1.1);
 }
 
-/* 6. RODAPÉ */
+/*RODAPÉ*/
 footer {
     background-color: #333;
     color: #ccc;
@@ -366,20 +365,23 @@ footer p {
     color: black;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 992px) {
-    .animal-detalhe {
-        flex-direction: column;
-        align-items: center;
-    }
-    .animal-imagem {
-        max-width: 80%;
-        margin-bottom: 30px;
-    }
-}
-
+/*RESPONSIVIDADE*/
 @media (max-width: 768px) {
-    .arvore .pais {
+    .banner-section h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .sobre {
+        padding: 40px 5%;
+    }
+
+    .animal {
+        flex: 0 0 100%; 
+    }
+
+    .contato-geral {
         flex-direction: column;
+        padding: 40px 5%;
     }
 }

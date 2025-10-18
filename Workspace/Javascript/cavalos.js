@@ -44,39 +44,81 @@ document.addEventListener('DOMContentLoaded', () => {
                     avoMaterno: "Astro",
                     avoMaternaMaterna: "Nebulosa"
                 }
+            },
+            {
+                nome: "Roliça",
+                imagem: "../Imagens/Cavalos/cavalo2.jpg",
+                pelagem: "Baia",
+                nascimento: "11/01/2018",
+                genealogia: {
+                    pai: "Relâmpago",
+                    mae: "Tempestade",
+                    avoPaterno: "Raio",
+                    avoMaternaPaterna: "Nuvem",
+                    avoMaterno: "Vento",
+                    avoMaternaMaterna: "Brisas"
+                }
             }
         ],
         montados: [
             {
-                nome: "Khan",
-                imagem: "../Imagens/Cavalos/cavalo1.jpeg",
-                pelagem: "Tordilha",
-                nascimento: "01/01/2018",
+                nome: "Paçoca",
+                imagem: "../Imagens/Cavalos/cavalo5.jpg",
+                pelagem: "Colorado",
+                nascimento: "21/10/2016",
                 genealogia: {
-                    pai: "Imperador",
-                    mae: "Rainha",
+                    pai: "Impeto",
+                    mae: "Aiela",
                     avoPaterno: "Rei",
                     avoMaternaPaterna: "Duquesa",
                     avoMaterno: "Sultão",
                     avoMaternaMaterna: "Princesa"
                 }
             },
+            {
+                nome: "Catéia",
+                imagem: "../Imagens/Cavalos/cavalo2.jpg",
+                pelagem: "Tordilho",
+                nascimento: "18/01/2021",
+                genealogia: {
+                    pai: "Relâmpago",
+                    mae: "Tempestade",
+                    avoPaterno: "Raio",
+                    avoMaternaPaterna: "Nuvem",
+                    avoMaterno: "Vento",
+                    avoMaternaMaterna: "Brisas"
+                }
+            }
         ],
         doadores: [
             {
-                nome: "Khan",
-                imagem: "../Imagens/Cavalos/cavalo1.jpeg",
-                pelagem: "Tordilha",
-                nascimento: "01/01/2018",
+                nome: "Viena",
+                imagem: "../Imagens/Cavalos/cavalo6.jpg",
+                pelagem: "Tordilha Branca",
+                nascimento: "15/05/2013",
                 genealogia: {
-                    pai: "Imperador",
-                    mae: "Rainha",
+                    pai: "Tardilho",
+                    mae: "Estilosa",
                     avoPaterno: "Rei",
                     avoMaternaPaterna: "Duquesa",
                     avoMaterno: "Sultão",
                     avoMaternaMaterna: "Princesa"
                 }
             },
+            {
+                nome: "Caramelo",
+                imagem: "../Imagens/Cavalos/cavalo2.jpg",
+                pelagem: "Pampa",
+                nascimento: "21/05/2020",
+                genealogia: {
+                    pai: "Relâmpago",
+                    mae: "Tempestade",
+                    avoPaterno: "Raio",
+                    avoMaternaPaterna: "Nuvem",
+                    avoMaterno: "Vento",
+                    avoMaternaMaterna: "Brisas"
+                }
+            }
         ]  
     };
 

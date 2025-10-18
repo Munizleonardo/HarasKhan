@@ -1,4 +1,4 @@
-/* Estilos Gerais e Reset */
+/*ESTILOS GERAIS*/
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4; 
 }
 
-/* 1. TOPO (HEADER) */
+/*TOPO*/
 header {
     background-color: white;
     padding: 10px 5%;
@@ -65,6 +65,10 @@ header nav {
     width: 100%;
 }
 
+.nav-links li a.active::after {
+    width: 100%;
+}
+
 .nav-links ul {
     display: none;
     position: absolute;
@@ -88,7 +92,7 @@ header nav {
     font-size: 1rem; 
 }
 
-/* 2. BANNER */
+/*BANNER*/
 .banner-section {
     height: 80vh; 
     position: relative;
@@ -112,7 +116,7 @@ header nav {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-/* 3. SOBRE NÓS */
+/*SOBRE NÓS*/
 .sobre {
     background-color: rgb(231, 231, 231);
     padding: 80px 10%;
@@ -148,7 +152,7 @@ header nav {
     background-color: #a0522d;
 }
 
-/* 5. CONTATO E INFORMAÇÕES */
+/*CONTATO E INFORMAÇÕES*/
 .contato-geral {
     display: flex;
     padding: 80px 10%;
@@ -229,7 +233,7 @@ form button:hover {
     transform: scale(1.1);
 }
 
-/* 6. RODAPÉ */
+/*RODAPÉ*/
 footer {
     background-color: #333;
     color: #ccc;
@@ -252,7 +256,7 @@ footer p {
     color: black;
 }
 
-/* 7. RESPONSIVIDADE PARA CELULARES */
+/*RESPONSIVIDADE*/
 @media (max-width: 768px) {
     .banner-section h1 {
         font-size: 4rem;
